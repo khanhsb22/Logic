@@ -1,0 +1,14 @@
+- Tổng giá trị tối đa của những món đồ ta có thể mang theo bên mình: Dựa theo 
+giá trị lớn nhất của từng món đồ được lấy sau khi đã sắp xếp các món đồ tăng dần 
+theo giá trị, sao cho totalValue <= maxW (Ta lấy từ cuối danh sách các vật phẩm)
+
+- Minh hoạ cách giải quyết: 
+	+ Sắp xếp các vật phẩm tăng dần theo giá trị (value1, value2,...). 
+	+ Lúc đó, khối lượng cũng được sắp xếp theo giá trị các vật phẩm (weight1, weight2,...). 
+	+ Tiếp theo, ta lấy lần lượt từng vật phẩm từ cuối danh sách các vật phẩm (Vì ở đó giá trị 
+của vật phẩm là cao nhất). Xem những vật phẩm nào có khối lượng nhỏ hơn hoặc bằng sức chứa maxW 
+thì cho vào túi, nếu khổi lượng các vật phẩm đã lấy lớn hơn maxW thì ta dừng lại.
+	+ Có thể áp dụng cho 2 hoặc nhiều hơn 2 vật phẩm.
+
+- Source code (Có thể xem file Main.java để biết thêm chi tiết)
+
