@@ -36,7 +36,7 @@ public class Main {
 }
 
 class DoWork {
-    // Sắp xếp danh sách các vật phẩm tăng dần theo khối lượng
+    // Sắp xếp danh sách các vật phẩm tăng dần theo giá trị
     // Thuật toán sắp xếp chèn
     public void swap(int[] val, int wt[], int n) {
         for (int i = 1; i < n; i++) {
@@ -55,7 +55,7 @@ class DoWork {
         }
     }
 
-    // Lấy ra những vật phẩm có giá trị cáo nhất trở về trước, thêm vào mảng item
+    // Lấy ra những vật phẩm có giá trị cao nhất trở về trước, thêm vào mảng items
     public void getItems(int val[], int wt[], ArrayList<Integer> items, int n, int W) {
         int Wtemp = W;
         for (int i = n - 1; i >= 0; i--) {
@@ -66,7 +66,7 @@ class DoWork {
 
         }
 
-        // In ra tổng items lấy được và các item được lấy
+        // In ra các vật phẩm lấy được và tổng giá trị cao nhất lấy được
         System.out.print("Giá trị các vật phẩm lần lượt: ");
         int sum = 0;
         for (int j : items) {

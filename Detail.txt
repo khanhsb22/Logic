@@ -1,6 +1,6 @@
 - Tổng giá trị tối đa của những món đồ ta có thể mang theo bên mình: Dựa theo 
 giá trị lớn nhất của từng món đồ được lấy sau khi đã sắp xếp các món đồ tăng dần 
-theo giá trị, sao cho totalValue <= maxW (Ta lấy từ cuối danh sách các vật phẩm)
+theo giá trị, sao cho totalWeight<= maxW (Ta lấy từ cuối danh sách các vật phẩm)
 
 - Minh hoạ cách giải quyết: 
 	+ Sắp xếp các vật phẩm tăng dần theo giá trị (value1, value2,...). 
